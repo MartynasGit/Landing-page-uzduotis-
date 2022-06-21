@@ -564,4 +564,5 @@ position: relative;
 .pricing_right-bot2 button:hover{
     background-color:#9629e6;
     color: white;
+    transition:  all 300ms ease;
 }
