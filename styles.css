@@ -69,6 +69,12 @@ li a:hover{
 .flex{
     display: flex;
 }
+.column{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
 .space-between{
 justify-content: space-between;
 }
@@ -623,6 +629,50 @@ position: relative;
 }
 .taskeliai:hover{
     background-color: rgb(102, 108, 106);
-    transition: all 300ms ease-in;
+    transition: all 200ms ease-in;
 }
-
+/* DOWLOAD LEDAI */
+.ledai{
+    background-image: url('/images/ledu\ sekcija.jpg');
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ledai::after{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.ledai_box{
+    padding: 22.5px;
+    width: 538px;
+    height: 72px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px 0;
+    justify-content: space-between;
+    color: #707070;
+}
+.ledai_box p{
+    font-weight: 600;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.ledai_kaire{
+    padding-top: 80px;
+}
+.ledai_desine{
+    position: relative;
+}
+.ledai_desine img{
+    width: 350px;
+    height: 544px;
+    position:absolute;
+    bottom: 0px;
+    right: -592px;
+}
